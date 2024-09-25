@@ -21,10 +21,7 @@ def run_agents(input_text, model):
     output_grammar = analyze_text(input_text, template_grammar, model)
     output_examinator = analyze_text(input_text, template_examinator, model)
 
-    input_judge = (
-        f"{output_sentiment}\n{output_sensation}\n{output_grammar}\n"
-        f"{output_examinator}\n{str(output_searcher)}"
-    )
+    input_judge = (f"{output_sentiment}\n{output_sensation}\n{output_grammar}\n{output_examinator}\n{str(output_searcher)}")
     output_judge = analyze_text(input_judge, template_judge, model)
 
     output_scorer = analyze_text(output_judge, template_scorer, model)
