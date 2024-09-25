@@ -9,7 +9,7 @@ def load_model(model_name="llama3-8b-8192"):
     elif model_name == "claude-2":
         return ChatAnthropic(model=model_name, temperature=0.2)
     elif model_name == "llama-3.1-405b-instruct":
-        return ChatPremAI(model=model_name, project_id=5881, temperature=0.2)
+        return ChatGroq(model=model_name, temperature=0.2)
     else:
         raise ValueError(f"Unsupported model: {model_name}")
 
