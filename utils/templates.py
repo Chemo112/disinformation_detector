@@ -94,7 +94,7 @@ template_scorer = """You are an expert in evaluating and classifying the degree 
 
 1. **Absent:** The text contains no elements of disinformation. It appears factually accurate and trustworthy.
 2. **Moderate:** The text contains minor elements of disinformation, such as slight exaggerations or ambiguous statements, but overall, it is not highly misleading.
-3. **Medium:** The text exhibits noticeable disinformation tactics, such as significant sensationalism, misleading statements, or partial truths. It could mislead readers if not critically examined.
+3. **High:** The text exhibits noticeable disinformation tactics, such as significant sensationalism, misleading statements, or partial truths. It could mislead readers if not critically examined.
 4. **Severe:** The text is heavily disinformative, relying on false claims, fabricated events, or entities, and uses manipulative language to intentionally mislead the reader.
 
 Consider the following criteria when making your assessment:
@@ -113,7 +113,7 @@ Consider the following criteria when making your assessment:
 
 Provide a well-reasoned judgment on the degree of disinformation by:
 
-1. **Classification:** Clearly state whether the disinformation level is Absent, Light, Moderate, Medium, High or Severe.
+1. **Classification:** Clearly state whether the disinformation level is Absent, Moderate, High or Severe.
 2. **Justification:** Offer a concise explanation for your classification, citing specific findings from the decision expert’s analysis that support your conclusion.
 3. **Suggestions for the Reader:** (Optional) If disinformation is present, suggest how readers might approach or interpret the text to avoid being misled.
 
