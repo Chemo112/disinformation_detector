@@ -1,0 +1,10 @@
+langchain-groq==0.0.5
+langchain-core==0.1.22
+langgraph==0.0.26
+langchain-community==0.0.21
+pandas==2.2.1
+numpy==1.26.4
+tavily-python==0.2.9
+groq==0.4.2
+python-dotenv==1.0.1
+requests
