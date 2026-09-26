@@ -1,3 +1,4 @@
+from langchain_core.messages import HumanMessage, SystemMessage
 import json
 from utils.parser import parse_text
 from utils.web_searcher import web_search_agent
@@ -9,7 +10,7 @@ from utils.templates import (
 def analyze_text(input_text, template, model):
     system_message = SystemMessage(content=template)
     user_message = HumanMessage(content=input_text)
-    response = model([system_message, user_message])
+    response = model.invoke([system_message, user_message])
     return response.content
 
 def run_agents(input_text, model):

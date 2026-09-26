@@ -1,5 +1,6 @@
 import json
 import re
+from langchain_core.messages import HumanMessage, SystemMessage
 
 def clean_json_string(s):
     s = s.strip()
@@ -28,7 +29,7 @@ def parse_text(input_text, model):
     
     system_message = SystemMessage(content=template)
     user_message = HumanMessage(content=input_text)
-    response = model([system_message, user_message])
+    response = model.invoke([system_message, user_message])
     
     try:
         cleaned_content = clean_json_string(response.content)
